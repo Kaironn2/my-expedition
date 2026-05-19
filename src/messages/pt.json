@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "title": "Kaironn - Jonathas Oliveira",
+    "description": "Portfolio de Jonathas Oliveira - engenheiro de software."
+  },
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiencia",
+    "certifications": "Certificacoes",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "cta": "Ver projetos"
+  },
+  "language": {
+    "toggle": "Mudar idioma",
+    "pt": "Portugues",
+    "en": "English"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}
