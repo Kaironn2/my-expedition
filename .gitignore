@@ -52,3 +52,6 @@ next-env.d.ts
 
 # Claude
 .claude/
+CLAUDE.md
+
+prototype/
