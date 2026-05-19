@@ -35,7 +35,7 @@ export function LanguageToggle({ ariaLabel, className, locale }: Props) {
   return (
     <fieldset
       className={cn(
-        "inline-flex rounded-full border border-border-subtle p-1 font-mono text-xs",
+        "inline-flex border border-border-subtle font-mono text-xs",
         isPending && "opacity-60",
         className,
       )}
@@ -48,7 +48,7 @@ export function LanguageToggle({ ariaLabel, className, locale }: Props) {
           onClick={() => switchTo(nextLocale)}
           aria-pressed={nextLocale === locale}
           className={cn(
-            "rounded-full px-3 py-1 uppercase tracking-wider transition-colors",
+            "uppercase transition-colors",
             nextLocale === locale
               ? "bg-gold-500 text-bg-base"
               : "text-text-muted hover:text-gold-300",

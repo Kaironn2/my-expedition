@@ -18,7 +18,7 @@ export function HeaderMobileMenu({ items }: { readonly items: readonly Item[] })
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
-        className="rounded-md border border-border-subtle p-2 text-gold-300"
+        className="border border-gold-700/35 bg-bg-base/40 p-2 text-gold-300"
       >
         <span aria-hidden className="mb-1 block h-0.5 w-5 bg-current" />
         <span aria-hidden className="mb-1 block h-0.5 w-5 bg-current" />
@@ -26,8 +26,8 @@ export function HeaderMobileMenu({ items }: { readonly items: readonly Item[] })
       </button>
       <ul
         className={cn(
-          "absolute right-6 top-16 w-48 rounded-lg border border-border-subtle",
-          "bg-bg-elevated p-2 shadow-lg",
+          "absolute right-6 top-16 w-52 border border-gold-700/25",
+          "bg-bg-base/95 p-2 shadow-lg shadow-black/30 backdrop-blur-xl",
           open ? "block" : "hidden",
         )}
       >
@@ -36,7 +36,7 @@ export function HeaderMobileMenu({ items }: { readonly items: readonly Item[] })
             <a
               href={`#${item.id}`}
               onClick={() => setOpen(false)}
-              className="block rounded-md px-3 py-2 font-mono text-xs uppercase tracking-wider text-text-muted hover:bg-bg-base hover:text-gold-300"
+              className="block px-3 py-2 font-display text-[10px] uppercase tracking-[0.22em] text-text-muted hover:bg-gold-500/10 hover:text-gold-300"
             >
               {item.label}
             </a>
