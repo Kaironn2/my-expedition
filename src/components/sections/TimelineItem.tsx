@@ -1,42 +1,79 @@
 "use client";
 
-import { Badge } from "@/components/ui/Badge";
+import { useId, useState } from "react";
 import { useInView } from "@/hooks/useInView";
 import { animClass, staggerDelay } from "@/lib/anim";
 
 interface Props {
   readonly index: number;
   readonly company: string;
+  readonly current?: boolean;
+  readonly defaultOpen?: boolean;
   readonly role: string;
   readonly description: string;
+  readonly highlights: readonly string[];
+  readonly labels: {
+    readonly current: string;
+    readonly level: string;
+    readonly showLess: string;
+    readonly showMore: string;
+  };
+  readonly level: number;
   readonly period: string;
   readonly stack: readonly string[];
 }
 
 export function TimelineItem(props: Props) {
   const [ref, isInView] = useInView<HTMLLIElement>();
+  const [open, setOpen] = useState(props.defaultOpen ?? false);
+  const highlightsId = useId();
 
   return (
     <li
       ref={ref}
-      className={`${animClass({ isVisible: isInView })} relative`}
+      className={`${animClass({ isVisible: isInView })} k-career-card ${props.current ? "is-current" : ""}`}
       style={staggerDelay(props.index, 100)}
     >
-      <span
-        aria-hidden
-        className="absolute -left-[31px] top-2 h-3 w-3 rounded-full border border-gold-500 bg-bg-base"
-      />
-      <p className="font-mono text-xs uppercase tracking-wider text-gold-700">{props.period}</p>
-      <h3 className="mt-1 font-serif text-2xl text-gold-300">{props.role}</h3>
-      <p className="font-mono text-sm text-text-muted">{props.company}</p>
-      <p className="mt-3 text-text-primary">{props.description}</p>
-      <ul className="mt-3 flex flex-wrap gap-2">
-        {props.stack.map((tech) => (
-          <li key={tech}>
-            <Badge>{tech}</Badge>
-          </li>
-        ))}
-      </ul>
+      <div className="k-career-marker" aria-hidden>
+        <div className="k-career-ring" />
+        <div className="k-career-core" />
+      </div>
+      <div className="k-career-body">
+        <p className="k-career-period">
+          {props.current ? <span className="k-career-current">{props.labels.current}</span> : null}
+          {props.period}
+        </p>
+        <div className="k-career-role-row">
+          <h3>{props.role}</h3>
+          <span>{props.company}</span>
+        </div>
+        <p className="k-career-summary">{props.description}</p>
+        {open ? (
+          <ul id={highlightsId} className="k-career-achievements">
+            {props.highlights.map((highlight) => (
+              <li key={highlight}>{highlight}</li>
+            ))}
+          </ul>
+        ) : null}
+        <ul className="k-career-skills" aria-label="Stack">
+          {props.stack.map((tech) => (
+            <li key={tech}>{tech}</li>
+          ))}
+        </ul>
+        <button
+          type="button"
+          className="k-career-expand"
+          aria-controls={highlightsId}
+          aria-expanded={open}
+          onClick={() => setOpen((value) => !value)}
+        >
+          {open ? `▲ ${props.labels.showLess}` : `▼ ${props.labels.showMore}`}
+        </button>
+      </div>
+      <div className="k-career-level">
+        <span>{props.labels.level}</span>
+        <b>{props.level}</b>
+      </div>
     </li>
   );
 }

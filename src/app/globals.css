@@ -552,6 +552,308 @@ button:focus-visible {
   transform: none;
 }
 
+.k-section-heading {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.k-section-num {
+  color: #9a8050;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+}
+
+.k-section-title {
+  position: relative;
+  color: #e9e3d6;
+  font-family: var(--font-display), var(--font-serif), serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.k-section-brush {
+  position: absolute;
+  inset: 20% -24px 10%;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      rgb(94 74 42 / 0%),
+      rgb(94 74 42 / 42%) 22%,
+      rgb(94 74 42 / 30%) 72%,
+      rgb(94 74 42 / 0%)
+    ),
+    radial-gradient(ellipse at center, rgb(169 62 62 / 22%), transparent 72%);
+  filter: blur(0.2px);
+  opacity: 0.7;
+  transform: skewX(-8deg);
+}
+
+.k-section-caption {
+  color: #8a8275;
+  font-family: var(--font-serif), serif;
+  font-size: 17px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+.k-section-rule {
+  position: relative;
+  top: -4px;
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, #9a8050, transparent 80%);
+}
+
+.k-career-roadmap {
+  position: relative;
+}
+
+.k-career-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.k-career-spine {
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 28px;
+  width: 1px;
+  background: linear-gradient(180deg, #c9a96e, #5e4a2a 80%, transparent);
+}
+
+.k-career-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: start;
+  padding: 28px 32px 28px 0;
+}
+
+.k-career-marker {
+  position: relative;
+  display: grid;
+  width: 56px;
+  height: 56px;
+  place-items: center;
+}
+
+.k-career-ring {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #9a8050;
+  border-radius: 50%;
+}
+
+.k-career-core {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #c9a96e;
+  background: #5e4a2a;
+  transform: rotate(45deg);
+}
+
+.k-career-card.is-current .k-career-ring {
+  border-color: #e9d3a0;
+  animation: k-career-pulse 2.4s ease-in-out infinite;
+  box-shadow:
+    0 0 0 4px rgb(201 169 110 / 8%),
+    0 0 24px rgb(233 211 160 / 32%);
+}
+
+.k-career-card.is-current .k-career-core {
+  border-color: #e9d3a0;
+  background: #e9d3a0;
+}
+
+@keyframes k-career-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 4px rgb(201 169 110 / 8%),
+      0 0 24px rgb(233 211 160 / 30%);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 8px rgb(201 169 110 / 4%),
+      0 0 32px rgb(233 211 160 / 50%);
+  }
+}
+
+.k-career-period {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  color: #8a8275;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.k-career-current {
+  padding: 3px 8px;
+  background: #a93e3e;
+  color: #e9e3d6;
+  font-size: 9px;
+}
+
+.k-career-role-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.k-career-role-row h3 {
+  margin: 0;
+  color: #e9e3d6;
+  font-family: var(--font-display), var(--font-serif), serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.k-career-card.is-current .k-career-role-row h3 {
+  color: #e9d3a0;
+}
+
+.k-career-role-row span {
+  color: #c9a96e;
+  font-family: var(--font-serif), serif;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.k-career-role-row span::before {
+  content: "- ";
+}
+
+.k-career-summary {
+  max-width: 64ch;
+  margin: 0 0 16px;
+  color: #bfb3a2;
+  font-family: var(--font-serif), serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.k-career-achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 8px 0 16px;
+  list-style: none;
+}
+
+.k-career-achievements li {
+  position: relative;
+  padding-left: 22px;
+  color: #bfb3a2;
+  font-family: var(--font-serif), serif;
+  font-size: 15px;
+}
+
+.k-career-achievements li::before {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  content: "";
+  background: #c9a96e;
+  transform: rotate(45deg);
+}
+
+.k-career-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.k-career-skills li {
+  padding: 4px 10px;
+  border: 1px solid rgb(201 169 110 / 18%);
+  color: #bfb3a2;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.k-career-expand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin-top: 14px;
+  border: 0;
+  background: none;
+  color: #c9a96e;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transition: color 180ms ease;
+}
+
+.k-career-expand:hover {
+  color: #e9d3a0;
+}
+
+.k-career-level {
+  display: inline-flex;
+  min-width: 64px;
+  flex-direction: column;
+  align-items: center;
+  align-self: start;
+  gap: 2px;
+  padding: 8px 14px;
+  border: 1px solid #9a8050;
+  color: #e9d3a0;
+  font-family: var(--font-display), var(--font-serif), serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.k-career-level span {
+  color: #c9a96e;
+  font-size: 9px;
+}
+
+.k-career-level b {
+  color: #e9d3a0;
+  font-family: var(--font-display), var(--font-serif), serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -570,6 +872,10 @@ button:focus-visible {
   }
 
   .k-hero-caret {
+    animation: none;
+  }
+
+  .k-career-card.is-current .k-career-ring {
     animation: none;
   }
 }
@@ -672,6 +978,42 @@ button:focus-visible {
   .k-hero-stat span {
     font-size: 8.5px;
     letter-spacing: 0.18em;
+  }
+
+  .k-section-heading {
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-bottom: 36px;
+  }
+
+  .k-section-caption {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .k-section-rule {
+    display: none;
+  }
+
+  .k-career-card {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 16px;
+    padding-right: 0;
+  }
+
+  .k-career-marker {
+    width: 48px;
+    height: 48px;
+  }
+
+  .k-career-spine {
+    left: 24px;
+  }
+
+  .k-career-level {
+    grid-column: 2;
+    justify-self: start;
+    margin-top: 8px;
   }
 }
 
