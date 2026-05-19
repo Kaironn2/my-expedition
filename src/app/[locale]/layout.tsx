@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { ReactNode } from "react";
-import { fontMono, fontSans, fontSerif } from "@/app/fonts";
+import { fontDisplay, fontMono, fontSans, fontSerif } from "@/app/fonts";
 import "@/app/globals.css";
 import { BackgroundFlares } from "@/components/background/BackgroundFlares";
 import { routing } from "@/i18n/routing";
@@ -45,7 +45,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${fontSerif.variable} ${fontSans.variable} ${fontMono.variable}`}
+      className={`${fontDisplay.variable} ${fontSerif.variable} ${fontSans.variable} ${fontMono.variable}`}
     >
       <body>
         <BackgroundFlares />

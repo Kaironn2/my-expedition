@@ -1,7 +1,15 @@
-import { Cormorant_Garamond, Inter, JetBrains_Mono } from "next/font/google";
+import { Cinzel, Cormorant_Garamond, Inter, JetBrains_Mono } from "next/font/google";
+
+export const fontDisplay = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
 
 export const fontSerif = Cormorant_Garamond({
   subsets: ["latin"],
+  style: ["normal", "italic"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-serif",
   display: "swap",

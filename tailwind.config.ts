@@ -11,6 +11,7 @@ const config: Config = {
         border: { subtle: "#2a2520" },
       },
       fontFamily: {
+        display: ["var(--font-display)", "var(--font-serif)", "serif"],
         serif: ["var(--font-serif)", "serif"],
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],

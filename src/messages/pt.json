@@ -11,7 +11,26 @@
     "contact": "Contato"
   },
   "hero": {
-    "cta": "Ver projetos"
+    "expeditionLabel": "EXPEDIÇÃO",
+    "titleFirst": "Jonathas",
+    "titleLast": "Oliveira",
+    "alias": "Kaironn",
+    "subtitleLead": "Engenheiro de Software - desenvolvendo soluções ",
+    "subtitleHighlight": "por aqueles que ainda virão",
+    "rotating": {
+      "one": "Construindo pipelines de extracao",
+      "two": "Otimizando processos criticos",
+      "three": "Refinando arquiteturas escalaveis",
+      "four": "Pesquisando novas abordagens"
+    },
+    "cta": "Ver projetos",
+    "contactCta": "Iniciar dialogo",
+    "statJourneyLabel": "Tempo de jornada",
+    "statJourneyValue": "2+ anos",
+    "statProjectsLabel": "Projetos em producao",
+    "statProjectsValue": "12",
+    "statStackLabel": "Stack atual",
+    "statStackValue": "Python - TS"
   },
   "language": {
     "toggle": "Mudar idioma",
