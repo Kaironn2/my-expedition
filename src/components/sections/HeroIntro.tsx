@@ -122,11 +122,19 @@ export function HeroIntro(props: Props) {
           style={staggerDelay(5, 120)}
         >
           <a href="#projects" className="k-brush-btn">
-            <span className="k-brush-key">A</span>
+            <span className="k-brush-key k-brush-key-x" aria-hidden="true">
+              <svg className="k-brush-symbol" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6.5 6.5L17.5 17.5M17.5 6.5L6.5 17.5" />
+              </svg>
+            </span>
             {props.ctaLabel}
           </a>
           <a href="#contact" className="k-brush-btn k-brush-btn-secondary">
-            <span className="k-brush-key">Y</span>
+            <span className="k-brush-key k-brush-key-y" aria-hidden="true">
+              <svg className="k-brush-symbol" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6.5 6.5L12 12M17.5 6.5L12 12M12 12V18" />
+              </svg>
+            </span>
             {props.contactCtaLabel}
           </a>
         </div>

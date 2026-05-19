@@ -464,15 +464,33 @@ button:focus-visible {
 }
 
 .k-brush-key {
-  display: grid;
+  display: inline-flex;
   width: 22px;
   height: 22px;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #9a8050;
+  border-radius: 50%;
   color: #e9d3a0;
   font-family: var(--font-mono), monospace;
-  font-size: 10px;
   line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.k-brush-symbol {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  stroke-width: 2.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.k-brush-key-x .k-brush-symbol,
+.k-brush-key-y .k-brush-symbol {
+  width: 14px;
+  height: 14px;
 }
 
 .k-hero-stats {

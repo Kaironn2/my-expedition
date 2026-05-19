@@ -19,7 +19,7 @@ export default async function Home({ params }: Props) {
   return (
     <>
       <Header />
-      <main className="relative z-10 pt-16">
+      <main className="relative z-10">
         <Hero />
         <About />
         <Experience />
