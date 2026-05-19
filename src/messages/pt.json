@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Kaironn - Jonathas Oliveira",
+    "description": "Portfolio de Jonathas Oliveira - engenheiro de software."
+  },
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiencia",
+    "certifications": "Certificacoes",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "expeditionLabel": "EXPEDIÇÃO",
+    "titleFirst": "Jonathas",
+    "titleLast": "Oliveira",
+    "alias": "Kaironn",
+    "subtitleLead": "Engenheiro de Software - desenvolvendo soluções ",
+    "subtitleHighlight": "por aqueles que ainda virão",
+    "rotating": {
+      "one": "Construindo pipelines de extracao",
+      "two": "Otimizando processos criticos",
+      "three": "Refinando arquiteturas escalaveis",
+      "four": "Pesquisando novas abordagens"
+    },
+    "cta": "Ver projetos",
+    "contactCta": "Iniciar dialogo",
+    "statJourneyLabel": "Tempo de jornada",
+    "statJourneyValue": "2+ anos",
+    "statProjectsLabel": "Projetos em producao",
+    "statProjectsValue": "12",
+    "statStackLabel": "Stack atual",
+    "statStackValue": "Python - TS"
+  },
+  "language": {
+    "toggle": "Mudar idioma",
+    "pt": "Portugues",
+    "en": "English"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}
