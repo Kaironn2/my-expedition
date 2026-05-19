@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { ReactNode } from "react";
 import { fontMono, fontSans, fontSerif } from "@/app/fonts";
 import "@/app/globals.css";
+import { BackgroundFlares } from "@/components/background/BackgroundFlares";
 import { routing } from "@/i18n/routing";
 
 interface Props {
@@ -46,7 +47,10 @@ export default async function LocaleLayout({ children, params }: Props) {
       lang={locale}
       className={`${fontSerif.variable} ${fontSans.variable} ${fontMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <BackgroundFlares />
+        {children}
+      </body>
     </html>
   );
 }

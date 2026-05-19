@@ -24,8 +24,8 @@ export const profile: Profile = {
     },
     {
       id: "email",
-      label: "fairytail9637@gmail.com",
-      href: "mailto:fairytail9637@gmail.com",
+      label: "kaironn.dev@gmail.com",
+      href: "mailto:kaironn.dev@gmail.com",
       icon: "email",
     },
   ],

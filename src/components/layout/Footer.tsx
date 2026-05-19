@@ -6,7 +6,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border-subtle">
+    <footer className="relative z-10 border-t border-border-subtle">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 py-8 md:flex-row md:px-10">
         <p className="font-mono text-xs uppercase tracking-wider text-text-muted">
           &copy; {year} {profile.name}. {t("rights")}
