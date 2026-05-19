@@ -26,9 +26,13 @@ export interface ExperiencePeriod {
 export interface Experience {
   readonly id: string;
   readonly company: string;
+  readonly current?: boolean;
+  readonly level: number;
   readonly role: LocalizedString;
   readonly period: ExperiencePeriod;
+  readonly periodLabel: LocalizedString;
   readonly description: LocalizedString;
+  readonly highlights: readonly LocalizedString[];
   readonly stack: readonly string[];
 }
 

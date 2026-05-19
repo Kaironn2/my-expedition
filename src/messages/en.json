@@ -5,10 +5,19 @@
   },
   "nav": {
     "about": "About",
-    "experience": "Experience",
+    "experience": "Career",
     "certifications": "Certifications",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "career": {
+    "num": "I.",
+    "title": "Career",
+    "caption": "Combat record",
+    "current": "CURRENT",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "level": "Level"
   },
   "hero": {
     "expeditionLabel": "EXPEDITION",
