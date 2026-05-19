@@ -240,25 +240,31 @@ button:focus-visible {
 }
 
 .k-language {
-  overflow: hidden;
+  display: inline-flex;
+  gap: 0;
+  padding: 4px;
   border-color: rgb(201 169 110 / 18%);
-  background: rgb(10 8 7 / 32%);
-  font-family: var(--font-display), var(--font-serif), serif;
+  background: transparent;
+  font-family: var(--font-mono), monospace;
 }
 
 .k-language button {
-  min-width: 34px;
-  min-height: 32px;
-  padding: 0 9px;
+  appearance: none;
+  min-width: auto;
+  min-height: auto;
+  padding: 6px 10px;
+  border: 0;
+  background: transparent;
+  color: #8a8275;
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.18em;
+  line-height: 1;
 }
 
 .k-language button[aria-pressed="true"] {
-  background: rgb(201 169 110 / 16%);
+  background: #5e4a2a;
   color: #e9d3a0;
-  box-shadow: inset 0 0 0 1px rgb(201 169 110 / 28%);
 }
 
 .k-language button:not([aria-pressed="true"]):hover {
@@ -571,9 +577,7 @@ button:focus-visible {
   }
 
   .k-language button {
-    min-width: 31px;
-    min-height: 30px;
-    padding: 0 8px;
+    padding: 5px 8px;
     font-size: 9px;
   }
 
