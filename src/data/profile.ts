@@ -19,7 +19,7 @@ export const profile: Profile = {
     {
       id: "github",
       label: "GitHub",
-      href: "https://github.com/kaironn",
+      href: "https://github.com/kaironn2",
       icon: "github",
     },
     {
