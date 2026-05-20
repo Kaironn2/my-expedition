@@ -2,11 +2,11 @@ import { useTranslations } from "next-intl";
 import { Heading } from "@/components/ui/Heading";
 import { Section } from "@/components/ui/Section";
 
-export function Certifications() {
-  const t = useTranslations("certificationsSection");
+export function Courses() {
+  const t = useTranslations("courses");
 
   return (
-    <Section id="certifications">
+    <Section id="courses">
       <Heading eyebrow={t("num")} as="h2">
         {t("title")}
       </Heading>

@@ -5,7 +5,14 @@ import { HeroIntro } from "./HeroIntro";
 export function Hero() {
   const t = useTranslations("hero");
   const expeditionNumber = new Date().getFullYear() - 2001;
-  const rotating = [t("rotating.one"), t("rotating.two"), t("rotating.three"), t("rotating.four")];
+  const rotating = [
+    t("rotating.one"),
+    t("rotating.two"),
+    t("rotating.three"),
+    t("rotating.four"),
+    t("rotating.five"),
+    t("rotating.six"),
+  ];
 
   return (
     <Section id="top" className="k-hero">
