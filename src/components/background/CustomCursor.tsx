@@ -5,11 +5,20 @@ import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 const HOVER_TARGETS = "button, a, [role='button'], input, textarea, select, label, [data-hover]";
 const POINTER_QUERY = "(hover: hover) and (pointer: fine)";
+const OFFSCREEN_POSITION = { x: -100, y: -100 };
+
+let lastPointerPosition: { x: number; y: number } | null = null;
 
 export function CustomCursor() {
   const dotRef = useRef<HTMLDivElement | null>(null);
   const ringRef = useRef<HTMLDivElement | null>(null);
-  const positionRef = useRef({ x: -100, y: -100, ringX: -100, ringY: -100 });
+  const initialPosition = lastPointerPosition ?? OFFSCREEN_POSITION;
+  const positionRef = useRef({
+    x: initialPosition.x,
+    y: initialPosition.y,
+    ringX: initialPosition.x,
+    ringY: initialPosition.y,
+  });
   const reducedMotion = useReducedMotion();
 
   useEffect(() => {
@@ -25,12 +34,23 @@ export function CustomCursor() {
       if (ringRef.current) ringRef.current.style.opacity = opacity;
     }
 
+    function setDotPosition(x: number, y: number) {
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+      }
+    }
+
+    function setRingPosition(x: number, y: number) {
+      if (ringRef.current) {
+        ringRef.current.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+      }
+    }
+
     function syncPointer(event: PointerEvent) {
+      lastPointerPosition = { x: event.clientX, y: event.clientY };
       positionRef.current.x = event.clientX;
       positionRef.current.y = event.clientY;
-      if (dotRef.current) {
-        dotRef.current.style.transform = `translate(${event.clientX}px, ${event.clientY}px) translate(-50%, -50%)`;
-      }
+      setDotPosition(event.clientX, event.clientY);
       setVisible(true);
     }
 
@@ -44,21 +64,22 @@ export function CustomCursor() {
     }
 
     function showCursor() {
-      setVisible(true);
+      if (lastPointerPosition) setVisible(true);
     }
 
     function tick() {
       positionRef.current.ringX += (positionRef.current.x - positionRef.current.ringX) * 0.18;
       positionRef.current.ringY += (positionRef.current.y - positionRef.current.ringY) * 0.18;
 
-      if (ringRef.current) {
-        ringRef.current.style.transform = `translate(${positionRef.current.ringX}px, ${positionRef.current.ringY}px) translate(-50%, -50%)`;
-      }
+      setRingPosition(positionRef.current.ringX, positionRef.current.ringY);
 
       frame = requestAnimationFrame(tick);
     }
 
     root.classList.add("has-custom-cursor");
+    setDotPosition(positionRef.current.x, positionRef.current.y);
+    setRingPosition(positionRef.current.ringX, positionRef.current.ringY);
+    if (lastPointerPosition) setVisible(true);
     window.addEventListener("pointermove", syncPointer, { passive: true });
     window.addEventListener("pointerover", syncHover, { passive: true });
     window.addEventListener("pointerleave", hideCursor);

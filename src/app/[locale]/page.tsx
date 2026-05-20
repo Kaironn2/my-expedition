@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { About } from "@/components/sections/About";
 import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
+import { Courses } from "@/components/sections/Courses";
 import { Experience } from "@/components/sections/Experience";
 import { Hero } from "@/components/sections/Hero";
 import { Projects } from "@/components/sections/Projects";
@@ -23,8 +24,9 @@ export default async function Home({ params }: Props) {
         <Hero />
         <About />
         <Experience />
-        <Certifications />
         <Projects />
+        <Certifications />
+        <Courses />
         <Contact />
       </main>
       <Footer />

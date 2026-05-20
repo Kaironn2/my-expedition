@@ -6,7 +6,15 @@ export interface ContactLink {
   readonly id: string;
   readonly label: string;
   readonly href: string;
-  readonly icon?: "github" | "linkedin" | "email" | "twitter" | "website";
+  readonly icon?:
+    | "github"
+    | "linkedin"
+    | "email"
+    | "twitter"
+    | "instagram"
+    | "nexus"
+    | "steam"
+    | "website";
 }
 
 export interface Profile {
@@ -48,9 +56,17 @@ export interface Certification {
 export interface Project {
   readonly id: string;
   readonly name: string;
+  readonly category: LocalizedString;
+  readonly level: LocalizedString;
+  readonly slot: LocalizedString;
   readonly summary: LocalizedString;
+  readonly highlights: readonly LocalizedString[];
   readonly stack: readonly string[];
+  readonly status: LocalizedString;
+  readonly year: string;
   readonly repoUrl?: string;
   readonly liveUrl?: string;
+  readonly imageUrl?: string;
+  readonly imageAlt: LocalizedString;
   readonly highlight: boolean;
 }

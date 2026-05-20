@@ -8,16 +8,65 @@
     "experience": "Career",
     "certifications": "Certifications",
     "projects": "Projects",
+    "courses": "Courses",
     "contact": "Contact"
   },
   "career": {
-    "num": "I.",
+    "num": "II.",
     "title": "Career",
     "caption": "Combat record",
     "current": "CURRENT",
     "showMore": "Show more",
     "showLess": "Show less",
     "level": "Level"
+  },
+  "about": {
+    "num": "I.",
+    "title": "About",
+    "caption": "Field profile",
+    "locationLabel": "Base",
+    "statusLabel": "Status",
+    "statusValue": "Full-stack with a strong base in data, automation, and performance. Exploring a few AI alternatives and curious about architecture and system design.",
+    "stackLabel": "Skills",
+    "stackItems": [
+      "Python",
+      "Distributed systems",
+      "Data extraction",
+      "Scrapy",
+      "FastAPI",
+      "Django",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Docker",
+      "SQL"
+    ]
+  },
+  "projects": {
+    "num": "III.",
+    "title": "Projects",
+    "caption": "Production artifacts",
+    "intro": "A selection of public builds and product pieces showing how I organize interfaces, data, and experience so they keep evolving after the first deploy.",
+    "featured": "Featured",
+    "repository": "Repository",
+    "live": "Live",
+    "stack": "Stack",
+    "status": "Status",
+    "year": "Year",
+    "noteTitle": "Private record",
+    "noteBody": "Part of the production work lives in private repositories. This section is ready to receive new deliveries without changing the visual structure."
+  },
+  "certificationsSection": {
+    "num": "IV.",
+    "title": "Certifications",
+    "caption": "Next records",
+    "comingSoon": "Coming soon"
+  },
+  "courses": {
+    "num": "V.",
+    "title": "Courses",
+    "caption": "Training and studies",
+    "comingSoon": "Coming soon"
   },
   "hero": {
     "expeditionLabel": "EXPEDITION",
@@ -27,10 +76,12 @@
     "subtitleLead": "Software Engineer - developing solutions ",
     "subtitleHighlight": "for those who come after",
     "rotating": {
-      "one": "Building extraction pipelines",
-      "two": "Optimizing critical processes",
-      "three": "Refining scalable architectures",
-      "four": "Researching new approaches"
+      "one": "Mining some data...",
+      "two": "Writing a few lines...",
+      "three": "Building something fun...",
+      "four": "Translating a few things...",
+      "five": "Rolling a few dice...",
+      "six": "Playing a few soulslikes... wait, back to work..."
     },
     "cta": "View projects",
     "contactCta": "Start a dialogue",
@@ -39,7 +90,7 @@
     "statProjectsLabel": "Production projects",
     "statProjectsValue": "12",
     "statStackLabel": "Current stack",
-    "statStackValue": "Python - TS"
+    "statStackValue": "Python - TypeScript"
   },
   "language": {
     "toggle": "Change language",

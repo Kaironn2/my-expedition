@@ -5,7 +5,14 @@ import { HeaderScrollFrame } from "@/components/layout/HeaderScrollFrame";
 import { LanguageToggle } from "@/components/layout/LanguageToggle";
 import type { Locale } from "@/types/portfolio";
 
-const SECTIONS = ["about", "experience", "certifications", "projects", "contact"] as const;
+const SECTIONS = [
+  "about",
+  "experience",
+  "projects",
+  "certifications",
+  "courses",
+  "contact",
+] as const;
 
 export function Header() {
   const locale = useLocale() as Locale;

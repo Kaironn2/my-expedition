@@ -24,6 +24,13 @@ interface Props {
   readonly titleLast: string;
 }
 
+function randomNextIndex(length: number, currentIndex: number): number {
+  if (length <= 1) return 0;
+
+  const next = Math.floor(Math.random() * (length - 1));
+  return next >= currentIndex ? next + 1 : next;
+}
+
 function Typewriter({ items }: { readonly items: readonly string[] }) {
   const reducedMotion = useReducedMotion();
   const [index, setIndex] = useState(0);
@@ -51,7 +58,7 @@ function Typewriter({ items }: { readonly items: readonly string[] }) {
           setShown(current.slice(0, shown.length - 1));
         } else {
           setForward(true);
-          setIndex((value) => value + 1);
+          setIndex((value) => randomNextIndex(items.length, value % items.length));
         }
       },
       forward && shown.length === current.length ? pause : delay,
