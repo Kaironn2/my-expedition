@@ -7,6 +7,7 @@ import { fontDisplay, fontMono, fontSans, fontSerif } from "@/app/fonts";
 import "@/app/globals.css";
 import { BackgroundFlares } from "@/components/background/BackgroundFlares";
 import { CustomCursor } from "@/components/background/CustomCursor";
+import { PetalsBackground } from "@/components/background/PetalsBackground";
 import { routing } from "@/i18n/routing";
 
 interface Props {
@@ -50,6 +51,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     >
       <body>
         <BackgroundFlares />
+        <PetalsBackground />
         <CustomCursor />
         {children}
       </body>
