@@ -32,12 +32,16 @@ export function HeaderNavigation({ items }: Props) {
     }
 
     function syncFromScroll() {
+      const pageBottom = window.scrollY + window.innerHeight;
+      const isAtBottom = Math.ceil(pageBottom) >= document.documentElement.scrollHeight - 1;
       const marker = window.scrollY + window.innerHeight * 0.38;
       let currentId = "";
 
       for (const section of sections) {
         if (section.offsetTop <= marker) currentId = section.id;
       }
+
+      if (isAtBottom) currentId = sections.at(-1)?.id ?? currentId;
 
       setActiveId(currentId);
     }
