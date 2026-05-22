@@ -9,29 +9,41 @@ interface Options {
 }
 
 export function useInView<T extends Element>(options: Options = {}) {
-  const { threshold = 0.15, rootMargin = "0px", once = true } = options;
+  const { threshold = 0.15, rootMargin = "0px 0px 10% 0px", once = true } = options;
   const ref = useRef<T | null>(null);
+  const frameRef = useRef(0);
+  const visibleRef = useRef(false);
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
 
+    function syncVisibility(nextVisible: boolean) {
+      if (visibleRef.current === nextVisible) return;
+      visibleRef.current = nextVisible;
+      cancelAnimationFrame(frameRef.current);
+      frameRef.current = requestAnimationFrame(() => setIsInView(nextVisible));
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry) return;
         if (entry.isIntersecting) {
-          setIsInView(true);
+          syncVisibility(true);
           if (once) observer.disconnect();
         } else if (!once) {
-          setIsInView(false);
+          syncVisibility(false);
         }
       },
       { threshold, rootMargin },
     );
 
     observer.observe(node);
-    return () => observer.disconnect();
+    return () => {
+      cancelAnimationFrame(frameRef.current);
+      observer.disconnect();
+    };
   }, [threshold, rootMargin, once]);
 
   return [ref, isInView] as const;
