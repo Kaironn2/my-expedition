@@ -12,6 +12,8 @@ export function Hero() {
     t("rotating.four"),
     t("rotating.five"),
     t("rotating.six"),
+    t("rotating.seven"),
+    t("rotating.eight"),
   ];
 
   return (

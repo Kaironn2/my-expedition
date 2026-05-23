@@ -88,8 +88,10 @@
       "two": "Codando algumas letrinhas...",
       "three": "Construindo algo divertido...",
       "four": "Traduzindo algumas coisas...",
-      "five": "Rolando alguns dados...",
-      "six": "Jogando alguns souls likes... ue? Volta..."
+      "five": "Jogando souls like... Ué? Volta...",
+      "six": "Rolando 1d20... FALHA CRÍTICA??",
+      "seven": "Rolando 1d20... CRÍTICO!!",
+      "eight": "O amanhã se aproxima..."
     },
     "cta": "Ver projetos",
     "contactCta": "Iniciar dialogo",

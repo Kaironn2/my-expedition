@@ -88,8 +88,10 @@
       "two": "Writing a few lines...",
       "three": "Building something fun...",
       "four": "Translating a few things...",
-      "five": "Rolling a few dice...",
-      "six": "Playing a few soulslikes... wait, back to work..."
+      "five": "Playing soulslikes... wait, back to work...",
+      "six": "Rolling 1d20... CRITICAL FAILURE??",
+      "seven": "Rolling 1d20... CRITICAL HIT!!",
+      "eight": "Tomorrow comes..."
     },
     "cta": "View projects",
     "contactCta": "Start a dialogue",
