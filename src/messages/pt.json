@@ -6,6 +6,7 @@
   "nav": {
     "about": "Sobre",
     "experience": "Carreira",
+    "skills": "Habilidades",
     "certifications": "Certificacoes",
     "projects": "Projetos",
     "courses": "Cursos",
@@ -19,6 +20,13 @@
     "showMore": "Ver mais",
     "showLess": "Ver menos",
     "level": "Nivel"
+  },
+  "skills": {
+    "num": "III.",
+    "title": "Habilidades",
+    "caption": "Arsenal",
+    "legend": "Nivel de familiaridade - 1 a 100",
+    "levelLabel": "Nivel de familiaridade"
   },
   "about": {
     "num": "I.",
@@ -43,7 +51,7 @@
     ]
   },
   "projects": {
-    "num": "III.",
+    "num": "IV.",
     "title": "Projetos",
     "caption": "Artefatos em producao",
     "intro": "Uma selecao de builds publicos e pecas de produto que mostram como organizo interfaces, dados e experiencia para seguir evoluindo depois do primeiro deploy.",
@@ -57,13 +65,13 @@
     "noteBody": "Parte do trabalho em producao fica em repositorios privados. Esta section foi preparada para receber novas entregas sem alterar a estrutura visual."
   },
   "certificationsSection": {
-    "num": "IV.",
+    "num": "V.",
     "title": "Certificacoes",
     "caption": "Proximos registros",
     "comingSoon": "Coming soon"
   },
   "courses": {
-    "num": "V.",
+    "num": "VI.",
     "title": "Cursos",
     "caption": "Treinamentos e estudos",
     "comingSoon": "Coming soon"
