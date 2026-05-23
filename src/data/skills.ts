@@ -77,7 +77,7 @@ export const skillCategories: readonly SkillCategory[] = [
   {
     id: "tools",
     num: "06",
-    name: "Tools",
+    name: "Tooling & Enviroment",
     items: [
       { name: "Git", familiarity: 91 },
       { name: "Linux", familiarity: 82 },
