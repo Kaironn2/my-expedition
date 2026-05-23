@@ -8,6 +8,7 @@ import type { Locale } from "@/types/portfolio";
 const SECTIONS = [
   "about",
   "experience",
+  "skills",
   "projects",
   "certifications",
   "courses",

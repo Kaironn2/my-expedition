@@ -9,7 +9,7 @@ export function Contact() {
 
   return (
     <Section id="contact">
-      <Heading eyebrow="VI." as="h2">
+      <Heading eyebrow="VII." as="h2">
         {t("contact")}
       </Heading>
       <ContactLinks links={profile.socials} />

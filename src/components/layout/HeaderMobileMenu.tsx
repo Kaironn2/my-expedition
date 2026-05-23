@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/cn";
 
 interface Item {
@@ -9,10 +9,25 @@ interface Item {
 }
 
 export function HeaderMobileMenu({ items }: { readonly items: readonly Item[] }) {
+  const menuRef = useRef<HTMLDivElement | null>(null);
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    if (!open) return;
+
+    function closeFromOutside(event: PointerEvent) {
+      const menu = menuRef.current;
+      const target = event.target;
+
+      if (menu && target instanceof Node && !menu.contains(target)) setOpen(false);
+    }
+
+    document.addEventListener("pointerdown", closeFromOutside);
+    return () => document.removeEventListener("pointerdown", closeFromOutside);
+  }, [open]);
+
   return (
-    <div className="k-mobile-menu md:hidden">
+    <div ref={menuRef} className="k-mobile-menu md:hidden">
       <button
         type="button"
         aria-label={open ? "Close menu" : "Open menu"}

@@ -6,6 +6,7 @@
   "nav": {
     "about": "About",
     "experience": "Career",
+    "skills": "Skills",
     "certifications": "Certifications",
     "projects": "Projects",
     "courses": "Courses",
@@ -19,6 +20,13 @@
     "showMore": "Show more",
     "showLess": "Show less",
     "level": "Level"
+  },
+  "skills": {
+    "num": "III.",
+    "title": "Skills",
+    "caption": "Arsenal",
+    "legend": "Familiarity level - 1 to 100",
+    "levelLabel": "Familiarity level"
   },
   "about": {
     "num": "I.",
@@ -43,7 +51,7 @@
     ]
   },
   "projects": {
-    "num": "III.",
+    "num": "IV.",
     "title": "Projects",
     "caption": "Production artifacts",
     "intro": "A selection of public builds and product pieces showing how I organize interfaces, data, and experience so they keep evolving after the first deploy.",
@@ -57,13 +65,13 @@
     "noteBody": "Part of the production work lives in private repositories. This section is ready to receive new deliveries without changing the visual structure."
   },
   "certificationsSection": {
-    "num": "IV.",
+    "num": "V.",
     "title": "Certifications",
     "caption": "Next records",
     "comingSoon": "Coming soon"
   },
   "courses": {
-    "num": "V.",
+    "num": "VI.",
     "title": "Courses",
     "caption": "Training and studies",
     "comingSoon": "Coming soon"
@@ -80,8 +88,10 @@
       "two": "Writing a few lines...",
       "three": "Building something fun...",
       "four": "Translating a few things...",
-      "five": "Rolling a few dice...",
-      "six": "Playing a few soulslikes... wait, back to work..."
+      "five": "Playing soulslikes... wait, back to work...",
+      "six": "Rolling 1d20... CRITICAL FAILURE??",
+      "seven": "Rolling 1d20... CRITICAL HIT!!",
+      "eight": "Tomorrow comes..."
     },
     "cta": "View projects",
     "contactCta": "Start a dialogue",
