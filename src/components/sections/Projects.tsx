@@ -7,7 +7,10 @@ import { ProjectCard } from "./ProjectCard";
 export function Projects() {
   const locale = useLocale() as Locale;
   const t = useTranslations("projects");
-  const ordered = [...projects].sort((a, b) => Number(b.highlight) - Number(a.highlight));
+  const levelPrefix = locale === "pt" ? "Nv." : "Lv.";
+  const repositoryLabel = t("repository");
+  const flipHintHover = t("flipHintHover");
+  const flipHintTap = t("flipHintTap");
 
   return (
     <Section id="projects" className="max-w-[1180px]">
@@ -21,23 +24,16 @@ export function Projects() {
         <span className="k-section-rule" aria-hidden />
       </div>
       <ul className="k-projects-grid">
-        {ordered.map((project, index) => (
+        {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
             index={index}
-            labels={{
-              live: t("live"),
-              repository: t("repository"),
-            }}
-            level={project.level[locale]}
-            imageAlt={project.imageAlt[locale]}
-            imageUrl={project.imageUrl}
-            liveUrl={project.liveUrl}
-            name={project.name}
-            repoUrl={project.repoUrl}
-            slot={project.slot[locale]}
-            stack={project.stack}
-            summary={project.summary[locale]}
+            project={project}
+            locale={locale}
+            levelPrefix={levelPrefix}
+            repositoryLabel={repositoryLabel}
+            flipHintHover={flipHintHover}
+            flipHintTap={flipHintTap}
           />
         ))}
       </ul>

@@ -58,6 +58,8 @@
     "featured": "Featured",
     "repository": "Repository",
     "live": "Live",
+    "flipHintHover": "hover",
+    "flipHintTap": "tap",
     "stack": "Stack",
     "status": "Status",
     "year": "Year",
