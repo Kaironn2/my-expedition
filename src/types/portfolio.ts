@@ -53,20 +53,24 @@ export interface Certification {
   readonly logoUrl?: string;
 }
 
+export type ProjectIconKind = "expedition-33" | "icosa" | "lune-glyph";
+
+export type ProjectLinkKind = "github" | "nexus";
+
+export interface ProjectLink {
+  readonly kind: ProjectLinkKind;
+  readonly url: string;
+}
+
 export interface Project {
   readonly id: string;
-  readonly name: string;
-  readonly category: LocalizedString;
-  readonly level: LocalizedString;
-  readonly slot: LocalizedString;
+  readonly name: LocalizedString;
+  readonly iconKind: ProjectIconKind;
+  readonly iconLabel?: string;
   readonly summary: LocalizedString;
-  readonly highlights: readonly LocalizedString[];
+  readonly longSummary: LocalizedString;
   readonly stack: readonly string[];
-  readonly status: LocalizedString;
-  readonly year: string;
-  readonly repoUrl?: string;
-  readonly liveUrl?: string;
-  readonly imageUrl?: string;
-  readonly imageAlt: LocalizedString;
-  readonly highlight: boolean;
+  readonly links: readonly ProjectLink[];
+  readonly placeholder?: boolean;
+  readonly secretLevel?: string;
 }

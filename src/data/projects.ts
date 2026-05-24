@@ -3,96 +3,82 @@ import type { Project } from "@/types/portfolio";
 export const projects: readonly Project[] = [
   {
     id: "proj-portfolio",
-    name: "my-expedition",
-    category: {
-      pt: "Portfolio narrativo",
-      en: "Narrative portfolio",
+    name: {
+      pt: "my-expedition",
+      en: "my-expedition",
     },
-    level: {
-      pt: "Nv. 6",
-      en: "Lv. 6",
-    },
-    slot: {
-      pt: "[ expedition log ]",
-      en: "[ expedition log ]",
-    },
+    iconKind: "expedition-33",
+    iconLabel: "33",
     summary: {
-      pt: "Portfolio em Next.js 15 com rotas localizadas, visual de expedicao e uma camada de conteudo tipada para evoluir sem retrabalho.",
-      en: "Next.js 15 portfolio with localized routes, expedition-inspired visuals, and a typed content layer built to evolve without rework.",
+      pt: "Portfólio narrativo com rotas localizadas e visual tematizado.",
+      en: "Narrative portfolio with localized routes and themed visuals.",
     },
-    highlights: [
-      {
-        pt: "Experiencia bilingue com next-intl e prefixo de locale em todas as rotas.",
-        en: "Bilingual experience with next-intl and locale prefixes on every route.",
-      },
-      {
-        pt: "Animacoes on-scroll em CSS e componentes client pequenos para preservar performance.",
-        en: "CSS scroll animations and small client components to preserve performance.",
-      },
-      {
-        pt: "Dados de carreira, certificacoes e projetos centralizados em arquivos tipados.",
-        en: "Career, certification, and project content centralized in typed data files.",
-      },
+    longSummary: {
+      pt: "Portfólio narrativo usando como tema base Clair Obscur: Expedition 33, com animações sutis, vetores criados no Illustrator e referências a jogos além do próprio Clair Obscur.",
+      en: "Narrative portfolio themed after Clair Obscur: Expedition 33, with subtle animations, hand-drawn vectors crafted in Illustrator, and nods to other games beyond Clair Obscur itself.",
+    },
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "i18n",
+      "Biome",
+      "Vercel",
+      "Cloudflare",
+      "Illustrator",
     ],
-    stack: ["Next.js", "TypeScript", "Tailwind", "next-intl"],
-    status: {
-      pt: "Em evolucao",
-      en: "Evolving",
-    },
-    year: "2026",
-    repoUrl: "https://github.com/Kaironn2/my-expedition",
-    imageUrl: "/projects/my-expedition.webp",
-    imageAlt: {
-      pt: "Screenshot do portfolio my-expedition.",
-      en: "Screenshot of the my-expedition portfolio.",
-    },
-    highlight: true,
+    links: [{ kind: "github", url: "https://github.com/Kaironn2/my-expedition" }],
   },
   {
     id: "proj-icosa",
-    name: "Icosa",
-    category: {
-      pt: "Ferramenta desktop",
-      en: "Desktop tool",
+    name: {
+      pt: "Icosa",
+      en: "Icosa",
     },
-    level: {
-      pt: "Nv. 7",
-      en: "Lv. 7",
-    },
-    slot: {
-      pt: "[ screenshot do app ]",
-      en: "[ app screenshot ]",
-    },
+    iconKind: "icosa",
     summary: {
-      pt: "Aplicacao desktop em Electron + TypeScript para auxiliar tradutores de mods de Baldur's Gate 3 com gerenciamento de arquivos, dicionarios e fluxos de localizacao.",
-      en: "Electron + TypeScript desktop app that helps Baldur's Gate 3 mod translators manage files, dictionaries, and localization workflows.",
+      pt: "Ferramenta desktop para tradutores de mods de Baldur's Gate 3 - gerencia arquivos, dicionários e fluxos de localização.",
+      en: "Desktop tool for Baldur's Gate 3 mod translators - manages files, dictionaries, and localization workflows.",
     },
-    highlights: [
-      {
-        pt: "Criado a partir da experiencia com localizacao de jogos e comunidade de modding.",
-        en: "Built from hands-on game localization and modding community experience.",
-      },
-      {
-        pt: "Apoia tradutores com fluxos de trabalho para arquivos, termos e traducoes.",
-        en: "Supports translators with workflows for files, terminology, and translations.",
-      },
-      {
-        pt: "Projeto usado por tradutores ao redor do mundo.",
-        en: "Project used by translators around the world.",
-      },
+    longSummary: {
+      pt: "Construído a partir da experiência com localização de jogos e da comunidade de modding. Centraliza arquivos, termos e traduções em um fluxo único. Minhas traduções feitas com a ferramenta já passam de 100k de downloads e a própria Icosa já auxiliou mais de 500 tradutores ao redor do mundo.",
+      en: "Built from hands-on game localization and modding community experience. Centralizes files, terminology, and translations in a single workflow. Translations released with the tool surpass 100k downloads and Icosa itself has supported over 500 translators worldwide.",
+    },
+    stack: [
+      "Electron",
+      "TypeScript",
+      "React",
+      "Tailwind",
+      "i18n",
+      "SQLite",
+      "Drizzle",
+      "Illustrator",
+      "Photoshop",
     ],
-    stack: ["Electron", "TypeScript", "React", "SQLite"],
-    status: {
-      pt: "Em producao",
-      en: "In production",
+    links: [
+      { kind: "github", url: "https://github.com/Kaironn2/BG3-Mod-Translator-Desktop" },
+      { kind: "nexus", url: "https://www.nexusmods.com/baldursgate3/mods/15976" },
+    ],
+  },
+  {
+    id: "proj-secret",
+    name: {
+      pt: "Em breve",
+      en: "Coming soon",
     },
-    year: "2025",
-    repoUrl: "https://github.com/Kaironn2/BG3-Mod-Translator-Desktop",
-    imageUrl: "/projects/icosa.webp",
-    imageAlt: {
-      pt: "Screenshot do aplicativo Icosa.",
-      en: "Screenshot of the Icosa app.",
+    iconKind: "lune-glyph",
+    summary: {
+      pt: "",
+      en: "",
     },
-    highlight: true,
+    longSummary: {
+      pt: "Entendo a curiosidade, mas é segredo o que vem aí...",
+      en: "I get the curiosity, but what is coming next is a secret...",
+    },
+    stack: [],
+    links: [],
+    placeholder: true,
+    secretLevel: "?",
   },
 ] as const;

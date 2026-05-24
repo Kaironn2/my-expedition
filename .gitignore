@@ -56,3 +56,11 @@ AGENTS.md
 CLAUDE.md
 
 prototype/
+
+# Playwright MCP artifacts
+.playwright-mcp/
+/*.png
+!/public/**/*.png
+
+# Local notes
+TODO.md
