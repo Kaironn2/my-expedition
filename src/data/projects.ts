@@ -10,12 +10,12 @@ export const projects: readonly Project[] = [
     iconKind: "expedition-33",
     iconLabel: "33",
     summary: {
-      pt: "Portfolio narrativo com rotas localizadas e camada de conteudo tipada para evoluir sem retrabalho.",
-      en: "Narrative portfolio with localized routes and a typed content layer built to evolve without rework.",
+      pt: "Portfólio narrativo com rotas localizadas e visual tematizado.",
+      en: "Narrative portfolio with localized routes and themed visuals.",
     },
     longSummary: {
-      pt: "Tematizado por Clair Obscur: Expedition 33, mistura portfolio e diario de expedicao - cada secao e um capitulo da jornada, com glifos vetoriais autorais feitos no Illustrator, animacoes sutis e frases que homenageiam o jogo. Bilingue por padrao, com camada de conteudo tipada para evoluir sem retrabalho.",
-      en: "Themed after Clair Obscur: Expedition 33, it blends portfolio and expedition log - every section is a chapter of the journey, with hand-drawn glyphs crafted in Illustrator, subtle animations and lines that pay homage to the game. Bilingual by default, with a typed content layer built to evolve without rework.",
+      pt: "Portfólio narrativo usando como tema base Clair Obscur: Expedition 33, com animações sutis, vetores criados no Illustrator e referências a jogos além do próprio Clair Obscur.",
+      en: "Narrative portfolio themed after Clair Obscur: Expedition 33, with subtle animations, hand-drawn vectors crafted in Illustrator, and nods to other games beyond Clair Obscur itself.",
     },
     stack: [
       "Next.js",
