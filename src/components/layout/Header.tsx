@@ -12,6 +12,7 @@ const SECTIONS = [
   "projects",
   "certifications",
   "courses",
+  "academic",
   "contact",
 ] as const;
 

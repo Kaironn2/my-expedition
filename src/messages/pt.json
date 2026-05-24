@@ -10,6 +10,7 @@
     "certifications": "Certificações",
     "projects": "Projetos",
     "courses": "Cursos",
+    "academic": "Formação",
     "contact": "Contato"
   },
   "career": {
@@ -77,6 +78,28 @@
     "title": "Cursos",
     "caption": "Treinamentos e estudos",
     "comingSoon": "Coming soon"
+  },
+  "academic": {
+    "num": "VII.",
+    "title": "Formação",
+    "caption": "Academia",
+    "progressLabel": "Progresso",
+    "statusInProgress": "Em curso",
+    "statusCompleted": "Concluído",
+    "monthsShort": [
+      "Jan",
+      "Fev",
+      "Mar",
+      "Abr",
+      "Mai",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Set",
+      "Out",
+      "Nov",
+      "Dez"
+    ]
   },
   "hero": {
     "expeditionLabel": "EXPEDIÇÃO",

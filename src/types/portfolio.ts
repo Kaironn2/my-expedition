@@ -53,6 +53,21 @@ export interface Certification {
   readonly logoUrl?: string;
 }
 
+export type AcademicIconKind = "gear";
+
+export interface AcademicPeriod {
+  readonly start: string;
+  readonly end: string;
+}
+
+export interface AcademicRecord {
+  readonly id: string;
+  readonly course: LocalizedString;
+  readonly institution: string;
+  readonly iconKind: AcademicIconKind;
+  readonly period: AcademicPeriod;
+}
+
 export type ProjectIconKind = "expedition-33" | "icosa" | "lune-glyph";
 
 export type ProjectLinkKind = "github" | "nexus";

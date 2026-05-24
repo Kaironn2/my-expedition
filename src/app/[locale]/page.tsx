@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { About } from "@/components/sections/About";
+import { Academic } from "@/components/sections/Academic";
 import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
 import { Courses } from "@/components/sections/Courses";
@@ -29,6 +30,7 @@ export default async function Home({ params }: Props) {
         <Projects />
         <Certifications />
         <Courses />
+        <Academic />
         <Contact />
       </main>
       <Footer />
