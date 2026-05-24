@@ -23,14 +23,14 @@ interface Props {
   readonly flipHintTap: string;
 }
 
-function ProjectGlyph({ project, level }: { readonly project: Project; readonly level: string }) {
+function ProjectGlyph({ project }: { readonly project: Project }) {
   if (project.iconKind === "icosa") {
     return <IcosaIcon className="k-pcard-glyph-svg" />;
   }
   if (project.iconKind === "lune-glyph") {
     return <LuneGlyphIcon className="k-pcard-glyph-svg" />;
   }
-  return <ExpeditionBadgeIcon label={level} className="k-pcard-glyph-svg" />;
+  return <ExpeditionBadgeIcon label={project.iconLabel ?? "?"} className="k-pcard-glyph-svg" />;
 }
 
 function ProjectLinkButton({
@@ -141,7 +141,7 @@ export function ProjectCard({
               <span className="k-pcard-hint">{flipHint}</span>
             </header>
             <div className="k-pcard-glyph">
-              <ProjectGlyph project={project} level={level} />
+              <ProjectGlyph project={project} />
             </div>
             {project.placeholder ? (
               <span className="k-pcard-secret-mark" aria-hidden>

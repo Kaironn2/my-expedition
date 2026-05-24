@@ -66,6 +66,7 @@ export interface Project {
   readonly id: string;
   readonly name: LocalizedString;
   readonly iconKind: ProjectIconKind;
+  readonly iconLabel?: string;
   readonly summary: LocalizedString;
   readonly longSummary: LocalizedString;
   readonly stack: readonly string[];
