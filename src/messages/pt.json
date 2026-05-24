@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Kaironn - Jonathas Oliveira",
-    "description": "Portfolio de Jonathas Oliveira - engenheiro de software."
+    "description": "Portfólio de Jonathas Oliveira - engenheiro de software."
   },
   "nav": {
     "about": "Sobre",
     "experience": "Carreira",
     "skills": "Habilidades",
-    "certifications": "Certificacoes",
+    "certifications": "Certificações",
     "projects": "Projetos",
     "courses": "Cursos",
     "contact": "Contato"
@@ -19,14 +19,14 @@
     "current": "ATUAL",
     "showMore": "Ver mais",
     "showLess": "Ver menos",
-    "level": "Nivel"
+    "level": "Nível"
   },
   "skills": {
     "num": "III.",
     "title": "Habilidades",
     "caption": "Arsenal",
-    "legend": "Nivel de familiaridade - 1 a 100",
-    "levelLabel": "Nivel de familiaridade"
+    "legend": "Nível de familiaridade - 1 a 100",
+    "levelLabel": "Nível de familiaridade"
   },
   "about": {
     "num": "I.",
@@ -34,12 +34,12 @@
     "caption": "Perfil de campo",
     "locationLabel": "Base",
     "statusLabel": "Status",
-    "statusValue": "Full-stack com base forte em dados, automacao e performance. Explorando algumas alternativas com IA e curioso sobre arquitetura e system design.",
+    "statusValue": "Full-stack com base forte em dados, automação e performance. Explorando algumas alternativas com IA e curioso sobre arquitetura e system design.",
     "stackLabel": "Skills",
     "stackItems": [
       "Python",
-      "Sistemas distribuidos",
-      "Extracao de dados",
+      "Sistemas distribuídos",
+      "Extração de dados",
       "Scrapy",
       "FastAPI",
       "Django",
@@ -53,23 +53,23 @@
   "projects": {
     "num": "IV.",
     "title": "Projetos",
-    "caption": "Artefatos em producao",
-    "intro": "Uma selecao de builds publicos e pecas de produto que mostram como organizo interfaces, dados e experiencia para seguir evoluindo depois do primeiro deploy.",
+    "caption": "Artefatos em produção",
+    "intro": "Uma seleção de builds públicos e peças de produto que mostram como organizo interfaces, dados e experiência para seguir evoluindo depois do primeiro deploy.",
     "featured": "Destaque",
-    "repository": "Repositorio",
+    "repository": "Repositório",
     "live": "Live",
-    "flipHintHover": "hover",
-    "flipHintTap": "toque",
     "stack": "Stack",
     "status": "Status",
     "year": "Ano",
     "noteTitle": "Registro privado",
-    "noteBody": "Parte do trabalho em producao fica em repositorios privados. Esta section foi preparada para receber novas entregas sem alterar a estrutura visual."
+    "noteBody": "Parte do trabalho em produção fica em repositórios privados. Esta section foi preparada para receber novas entregas sem alterar a estrutura visual.",
+    "flipHintHover": "hover",
+    "flipHintTap": "toque"
   },
   "certificationsSection": {
     "num": "V.",
-    "title": "Certificacoes",
-    "caption": "Proximos registros",
+    "title": "Certificações",
+    "caption": "Próximos registros",
     "comingSoon": "Coming soon"
   },
   "courses": {
@@ -96,17 +96,17 @@
       "eight": "O amanhã se aproxima..."
     },
     "cta": "Ver projetos",
-    "contactCta": "Iniciar dialogo",
+    "contactCta": "Iniciar diálogo",
     "statJourneyLabel": "Tempo de jornada",
     "statJourneyValue": "2+ anos",
-    "statProjectsLabel": "Projetos em producao",
+    "statProjectsLabel": "Projetos em produção",
     "statProjectsValue": "2",
     "statStackLabel": "Stack atual",
     "statStackValue": "Python - TypeScript"
   },
   "language": {
     "toggle": "Mudar idioma",
-    "pt": "Portugues",
+    "pt": "Português",
     "en": "English"
   },
   "footer": {

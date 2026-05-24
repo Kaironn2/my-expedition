@@ -38,11 +38,11 @@ export const projects: readonly Project[] = [
     },
     iconKind: "icosa",
     summary: {
-      pt: "Ferramenta desktop para tradutores de mods de Baldur's Gate 3 - gerencia arquivos, dicionarios e fluxos de localizacao.",
+      pt: "Ferramenta desktop para tradutores de mods de Baldur's Gate 3 - gerencia arquivos, dicionários e fluxos de localização.",
       en: "Desktop tool for Baldur's Gate 3 mod translators - manages files, dictionaries, and localization workflows.",
     },
     longSummary: {
-      pt: "Construido a partir da experiencia com localizacao de jogos e da comunidade de modding. Centraliza arquivos, termos e traducoes em um fluxo unico. Minhas traducoes feitas com a ferramenta ja passam de 100k de downloads e a propria Icosa ja auxiliou mais de 500 tradutores ao redor do mundo.",
+      pt: "Construído a partir da experiência com localização de jogos e da comunidade de modding. Centraliza arquivos, termos e traduções em um fluxo único. Minhas traduções feitas com a ferramenta já passam de 100k de downloads e a própria Icosa já auxiliou mais de 500 tradutores ao redor do mundo.",
       en: "Built from hands-on game localization and modding community experience. Centralizes files, terminology, and translations in a single workflow. Translations released with the tool surpass 100k downloads and Icosa itself has supported over 500 translators worldwide.",
     },
     stack: [
@@ -73,7 +73,7 @@ export const projects: readonly Project[] = [
       en: "",
     },
     longSummary: {
-      pt: "Entendo a curiosidade, mas e segredo o que vem ai...",
+      pt: "Entendo a curiosidade, mas é segredo o que vem aí...",
       en: "I get the curiosity, but what is coming next is a secret...",
     },
     stack: [],
