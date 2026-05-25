@@ -10,9 +10,9 @@ const SECTIONS = [
   "experience",
   "skills",
   "projects",
+  "academic",
   "certifications",
   "courses",
-  "academic",
   "contact",
 ] as const;
 

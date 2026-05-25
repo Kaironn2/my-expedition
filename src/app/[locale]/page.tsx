@@ -28,9 +28,9 @@ export default async function Home({ params }: Props) {
         <Experience />
         <Skills />
         <Projects />
+        <Academic />
         <Certifications />
         <Courses />
-        <Academic />
         <Contact />
       </main>
       <Footer />
