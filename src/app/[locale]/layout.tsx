@@ -27,6 +27,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://my-expedition.vercel.app"),
     title: t("title"),
     description: t("description"),
+    icons: {
+      icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+      shortcut: ["/favicon.svg"],
+    },
     openGraph: {
       title: t("title"),
       description: t("description"),
