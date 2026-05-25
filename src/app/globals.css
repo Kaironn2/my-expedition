@@ -1612,6 +1612,12 @@ button:focus-visible {
   line-height: 1.6;
 }
 
+.k-career-summary strong,
+.k-career-achievements strong {
+  color: #e9d3a0;
+  font-weight: 600;
+}
+
 .k-career-achievements {
   display: flex;
   flex-direction: column;

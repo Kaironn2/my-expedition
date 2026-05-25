@@ -23,6 +23,16 @@ interface Props {
   readonly stack: readonly string[];
 }
 
+function renderFormattedText(text: string) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={`${part}-${index}`}>{part.slice(2, -2)}</strong>;
+    }
+
+    return part;
+  });
+}
+
 export function TimelineItem(props: Props) {
   const [ref, isInView] = useInView<HTMLLIElement>();
   const [open, setOpen] = useState(props.defaultOpen ?? false);
@@ -47,11 +57,11 @@ export function TimelineItem(props: Props) {
           <h3>{props.role}</h3>
           <span>{props.company}</span>
         </div>
-        <p className="k-career-summary">{props.description}</p>
+        <p className="k-career-summary">{renderFormattedText(props.description)}</p>
         {open ? (
           <ul id={highlightsId} className="k-career-achievements">
             {props.highlights.map((highlight) => (
-              <li key={highlight}>{highlight}</li>
+              <li key={highlight}>{renderFormattedText(highlight)}</li>
             ))}
           </ul>
         ) : null}
