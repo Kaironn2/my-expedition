@@ -21,12 +21,12 @@ export const experiences: readonly Experience[] = [
     },
     highlights: [
       {
-        pt: "Otimizei pipelines de scraping em até 90%, reduzindo processos de aproximadamente 20min para 2min e de 3h para 20min.",
-        en: "Optimized scraping pipelines by up to 90%, cutting runs from roughly 20min to 2min and from 3h to 20min.",
+        pt: "Otimizei pipelines de scraping em **até 90%**, reduzindo processos de aproximadamente **20min para 2min** e de **3h para 20min**.",
+        en: "Optimized scraping pipelines by **up to 90%**, cutting runs from roughly **20min to 2min** and from **3h to 20min**.",
       },
       {
-        pt: "Refinei um fluxo de 104.000 itens reduzindo requisições por item de aproximadamente 9 para 4, cortando uso de infraestrutura.",
-        en: "Refined a 104,000-item workflow by reducing requests per item from roughly 9 to 4, cutting infrastructure usage.",
+        pt: "Refinei um fluxo de **104.000 itens** reduzindo requisições por item de aproximadamente **9 para 4**, cortando uso de infraestrutura.",
+        en: "Refined a **104,000-item workflow** by reducing requests per item from roughly **9 to 4**, cutting infrastructure usage.",
       },
       {
         pt: "Desenvolvi webhooks em FastAPI e integrações com APIs externas para comunicação entre serviços.",
@@ -128,16 +128,16 @@ export const experiences: readonly Experience[] = [
     },
     highlights: [
       {
-        pt: "Automação de 90% do rastreio de envios integrando 4 transportadoras, eliminando 6h/dia de trabalho manual.",
-        en: "Automated 90% of shipment tracking across 4 carriers, eliminating 6h/day of manual work.",
+        pt: "Automação de **90% do rastreio de envios** integrando **4 transportadoras**, eliminando **6h/dia** de trabalho manual.",
+        en: "Automated **90% of shipment tracking** across **4 carriers**, eliminating **6h/day** of manual work.",
       },
       {
         pt: "ETLs de auditoria de notas fiscais e frete melhorando análise de custos.",
         en: "ETL workflows for invoice and freight auditing, improving cost analysis.",
       },
       {
-        pt: "Sistemas de notificação automática por email e WhatsApp reduzindo suporte de transporte em mais de 50%.",
-        en: "Automated email and WhatsApp notification systems cutting transport-related support by more than 50%.",
+        pt: "Sistemas de notificação automática por email e WhatsApp reduzindo suporte de transporte em **mais de 50%**.",
+        en: "Automated email and WhatsApp notification systems cutting transport-related support by **more than 50%**.",
       },
       {
         pt: "Automações operacionais com Google Apps Script e planilhas integradas em tempo real.",

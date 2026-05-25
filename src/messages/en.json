@@ -68,19 +68,19 @@
     "noteBody": "Part of the production work lives in private repositories. This section is ready to receive new deliveries without changing the visual structure."
   },
   "certificationsSection": {
-    "num": "V.",
+    "num": "VI.",
     "title": "Certifications",
     "caption": "Next records",
     "comingSoon": "Coming soon"
   },
   "courses": {
-    "num": "VI.",
+    "num": "VII.",
     "title": "Courses",
     "caption": "Training and studies",
     "comingSoon": "Coming soon"
   },
   "academic": {
-    "num": "VII.",
+    "num": "V.",
     "title": "Academic",
     "caption": "Academy",
     "progressLabel": "Progress",
