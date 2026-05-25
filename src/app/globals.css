@@ -188,22 +188,50 @@ button:focus-visible {
 .k-header-brand-mark {
   position: relative;
   display: grid;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   place-items: center;
 }
 
 .k-header-brand-mark svg {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   overflow: visible;
-  stroke: #e9d3a0;
-  stroke-width: 1;
   filter: drop-shadow(0 0 12px rgb(201 169 110 / 12%));
 }
 
-.k-header-brand-mark path:last-child {
+.k-header-brand-frame {
+  stroke: #e9d3a0;
+}
+
+.k-header-brand-ornaments {
+  stroke: #5e4a2a;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.k-header-brand-core {
+  fill: transparent;
+  stroke: #c9a96e;
+  transition:
+    fill 180ms ease,
+    stroke 180ms ease;
+}
+
+.k-header-brand-seal {
+  fill: #0a0807;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.k-header-brand.is-active .k-header-brand-ornaments,
+.k-header-brand.is-active .k-header-brand-seal {
+  opacity: 1;
+}
+
+.k-header-brand.is-active .k-header-brand-core {
   fill: #c9a96e;
+  stroke: #c9a96e;
 }
 
 .k-header-nav {
