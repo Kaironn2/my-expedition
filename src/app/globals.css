@@ -19,6 +19,12 @@ html {
   scrollbar-width: thin;
 }
 
+::selection {
+  background-color: rgb(201 169 110 / 88%);
+  color: #0a0807;
+  text-shadow: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
